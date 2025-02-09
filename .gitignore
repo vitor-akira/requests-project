@@ -1,0 +1,11 @@
+# Ignorar a pasta do ambiente virtual
+venv/
+
+# Ignorar arquivos CSV específicos
+*.csv
+
+# Ignorar notebooks Jupyter
+*.ipynb
+
+# Outras pastas ou arquivos indesejados
+__pycache__/
