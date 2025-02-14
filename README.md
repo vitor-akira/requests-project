@@ -5,37 +5,24 @@ Este projeto foi desenvolvido para a obtenção de dados sobre as linguagens de 
 
 ```
 requests-project/
-├── scripts/
-│   ├── extracting_data.py  # Script para extração de dados dos repositórios
-│   ├── manipulate_repos.py # Manipulação de repositórios (criação, upload de arquivos)
-│   ├── repos_data.py       # 
+├── scripts/                # Scripts Python
 ├── main.py                 # Arquivo principal para execução
 └── 📄 requirements.txt     # Bibliotecas necessárias
 ```
 
-📌 Pré-requisitos
+## 🛠️ Configuração do Ambiente
 
-Antes de rodar o projeto, certifique-se de ter o Python 3 instalado e configurar um ambiente virtual:
-
-python3 -m venv venv
-source venv/bin/activate  # Linux/Mac
-o venv\Scripts\activate  # Windows
-pip install -r requirements.txt
-
-🔧 Como Usar
-
-1️⃣ Configurar Credenciais da API do GitHub
-
-Para usar a API do GitHub, você precisa de um token de acesso pessoal. Adicione o token ao código ou defina uma variável de ambiente:
-
-export GITHUB_TOKEN='seu_token_aqui'  # Linux/Mac
-set GITHUB_TOKEN=seu_token_aqui       # Windows
+### 1️⃣ Clonar o repositório
+```bash
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+cd SEU_REPOSITORIO
+```
 
 ### 2️⃣ Criar um ambiente virtual (WSL/Linux)
 ```bash
-sudo apt install python3.12-venv  # Caso o venv não esteja disponível
-python3 -m venv venv
-source venv/bin/activate  # Ativar o ambiente virtual
+python -m venv venv
+source venv/bin/activate  
+venv\Scripts\activate
 ```
 
 ### 3️⃣ Instalar dependências
@@ -43,7 +30,9 @@ source venv/bin/activate  # Ativar o ambiente virtual
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Extrair Data
+## 📝 Notas
+Para usar a API do GitHub, você precisa de um token de acesso pessoal. Adicione o token ao código ou defina uma variável de ambiente:
 ```bash
-python3 -m scripts.extracting_data
+export GITHUB_TOKEN='seu_token_aqui'  # Linux/Mac
+set GITHUB_TOKEN=seu_token_aqui       # Windows
 ```
